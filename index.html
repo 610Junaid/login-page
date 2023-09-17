@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <span class="background"></span>
+    <span class="centering">
+      <form class="my-form">
+        <span class="login-welcome-row">
+          <img class="login-welcome" src="landing.jpg" />
+
+          <!--optemizing the image in production-->
+          <h1>Log In</h1>
+        </span>
+        <div class="text-field">
+          <label for="email">Email:</label>
+          <input
+            aria-label="Email"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+
+          <img alt="Email Icon" title="Email Icon" src="email.svg" />
+        </div>
+
+        <div class="text-field">
+          <label for="pasword">Password:</label>
+          <input
+            aria-label="Password"
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Your Password"
+            title="Minimum 6 characters at least 1 Alphabet and 1 Number"
+            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+            required
+          />
+
+          <img alt="Password Icon" title="Password Icon" src="password.svg" />
+        </div>
+        <input type="submit" class="my-form__button" value=" login" />
+        <div class="my-form__actions">
+          <div class="my-form__row">
+            <span>Forget Your Password</span>
+            <a href="#" class="reset-pas" title="Reset Password"
+              >Reset Password</a
+            >
+          </div>
+          <div class="my-form__signup">
+            <a href="#" title="Create Account">Create Account</a>
+          </div>
+        </div>
+      </form>
+    </span>
+    <script src="script.js"></script>
+  </body>
+</html>
